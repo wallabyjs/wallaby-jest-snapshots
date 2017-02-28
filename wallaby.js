@@ -3,10 +3,10 @@ module.exports = function (wallaby) {
     files: [
       'src/**/*.js*',
       'src/**/*.snap',
-      '!src/**/*.spec.js*'
+      '!src/**/*.spec.js'
     ],
     tests: [
-      'src/**/*.spec.js*'
+      'src/**/*.spec.js'
     ],
 
     env: {
