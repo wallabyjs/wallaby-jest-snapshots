@@ -1,13 +1,12 @@
 module.exports = function (wallaby) {
   return {
     files: [
-      'src/**/*.js',
+      'src/**/*.js*',
       'src/**/*.snap',
-      'package.json',
-      '!src/**/*.spec.js'
+      '!src/**/*.spec.js*'
     ],
     tests: [
-      'src/**/*.spec.js'
+      'src/**/*.spec.js*'
     ],
 
     env: {
@@ -16,13 +15,9 @@ module.exports = function (wallaby) {
     },
 
     compilers: {
-      "**/*.js": wallaby.compilers.babel()
+      "**/*.js*": wallaby.compilers.babel()
     },
 
-    testFramework: 'jest',
-
-    setup: function () {
-      wallaby.testFramework.configure(require('./package.json').jest);
-    }
+    testFramework: 'jest'
   };
 };
