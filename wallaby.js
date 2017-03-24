@@ -15,9 +15,11 @@ module.exports = function (wallaby) {
     },
 
     compilers: {
-      "**/*.js*": wallaby.compilers.babel()
+      "**/*.js": wallaby.compilers.babel()
     },
 
-    testFramework: 'jest'
+    testFramework: 'jest',
+
+    debug: true
   };
 };
