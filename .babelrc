@@ -1,6 +1,26 @@
 {
-  "presets": [
-    "latest",
-    "react"
-  ]
+  "env": {
+    "test": {
+      "passPerPreset": false,
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "node": 6.9
+            },
+            "exclude": ["transform-regenerator"],
+            // "modules": false,
+            "useBuiltIns": true,
+            "debug": false
+          }
+        ],
+        "react"
+      ],
+      "plugins": [
+        "rewire",
+        "transform-object-rest-spread"
+      ]
+    }
+  }
 }

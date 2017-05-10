@@ -7,9 +7,4 @@ describe('component', () => {
     const tree = create(<TestComponent a="one string" b={1}/>).toJSON();
     expect(tree).toMatchSnapshot();
   });
-
-  it('should be rendered correctly with different props', () => {
-    const tree = create(<TestComponent a="another string" b={2}/>).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
 });

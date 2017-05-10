@@ -18,22 +18,3 @@ exports[`component should be rendered correctly 1`] = `
   </div>
 </div>
 `;
-
-exports[`component should be rendered correctly with different props 1`] = `
-<div
-  className="root"
->
-  <div
-    className="string"
-  >
-    String is 
-    another string
-  </div>
-  <div
-    className="number"
-  >
-    Number is 
-    2
-  </div>
-</div>
-`;
