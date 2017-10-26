@@ -1,11 +1,40 @@
 {
   "compilerOptions": {
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noImplicitThis": true,
+    "noUnusedParameters": true,
+    "importHelpers": true,
+    "noEmitHelpers": true,
     "module": "commonjs",
-    "target": "es5",
+    "moduleResolution": "node",
+    "target": "es2016",
     "jsx": "react",
-    "sourceMap": true
+    "outDir": ".tmp/build",
+    "lib": [
+      "es2016",
+      "dom"
+    ],
+    "typeRoots": [
+      "./node_modules/@types"
+    ]
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "include": [
+    "src/**/*",
+    "build/**/*",
+    "spec/**/*",
+    "danger/**/*",
+    "node_modules/electron-prebuilt-compile/node_modules/electron"
+  ],
+  "formatCodeOptions": {
+    "indentSize": 2,
+    "tabSize": 2
+  }
 }
