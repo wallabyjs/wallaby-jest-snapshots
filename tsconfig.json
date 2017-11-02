@@ -27,11 +27,7 @@
     ]
   },
   "include": [
-    "src/**/*",
-    "build/**/*",
-    "spec/**/*",
-    "danger/**/*",
-    "node_modules/electron-prebuilt-compile/node_modules/electron"
+    "src/**/*"
   ],
   "formatCodeOptions": {
     "indentSize": 2,
