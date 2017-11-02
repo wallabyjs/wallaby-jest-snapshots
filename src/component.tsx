@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export class TestComponent extends React.Component {
+export class TestComponent extends React.Component<any, any> {
   render() {
     return (
       <div className="root">
