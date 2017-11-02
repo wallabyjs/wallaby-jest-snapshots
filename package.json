@@ -22,10 +22,9 @@
     "react-test-renderer": "^15.4.2"
   },
   "devDependencies": {
-    "@types/jest": "^21.1.5",
-    "@types/react": "^16.0.19",
-    "@types/react-test-renderer": "^16.0.0",
-    "typescript": "^2.5.2"
+    "babel-cli": "^6.22.2",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-react": "^6.22.0"
   },
   "jest": {}
 }
