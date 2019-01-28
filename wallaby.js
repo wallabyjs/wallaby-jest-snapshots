@@ -2,7 +2,6 @@ module.exports = function (wallaby) {
   return {
     files: [
       'src/**/*.js?(x)',
-      'src/**/*.snap',
       '!src/**/*.spec.js?(x)'
     ],
     tests: [
